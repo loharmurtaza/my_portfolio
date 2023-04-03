@@ -1,0 +1,51 @@
+@import './reset.scss';
+@import './mixins.scss';
+@import './nav.scss';
+@import './header__hero.scss';
+@import './section__services.scss';
+@import './section__about__me.scss';
+@import './section__my-recent-projects.scss';
+@import './section__my-work-example.scss';
+@import './section__feedback.scss';
+@import './section__contact.scss';
+@import './section__blog.scss';
+@import './footer.scss';
+@import './media.scss';
+
+html {
+	font-family: 'Inter', sans-serif;
+  color: rgb(255, 255, 255);
+	overflow-x: hidden;
+	color: gray;
+}
+.main {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.active {
+	color: red;
+}
+.arrow-component {
+	display: flex;
+	align-items: center;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.02em;
+	& span + span {
+		margin-left: 3px;
+	}
+}
+.arrow-component-img {
+	height: 6px;
+	margin-right: 9px;
+}
+.arrow-component-text-1 {
+	color: #25282B;
+}
+.arrow-component-text-2 {
+	color: #F22225;
+}

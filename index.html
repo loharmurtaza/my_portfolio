@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<meta name="description" content="Simple Starter Description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<script src="./javascript/main.js" defer></script>
+	<script src="./javascript/buttons.js" defer></script>
+	<link rel="stylesheet" href="./scss/main.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navbar__container">
+			<div class="navbar__logo">
+				<p class="navbar__logo-first">Port</p>
+				<p class="navbar__logo-second">folio.</p>
+			</div>
+			<ul>
+				<li class="active"><a href="#">HOME</a></li>
+				<li><a href="#">PAGES</a></li>
+				<li><a href="#">DOCTORS</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">BLOG</a></li>	
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+			<div class="nav__login">
+				<button class="nav__contact-btn">Contact</button>
+			</div>
+			<button class="mobile__nav-burger-btn disabled"><img src="./assets/images/burger-btn.png" alt="burger-btn"></button>
+		</div>
+	</nav>
+	<nav class="mobile__nav">
+		<div class="mobile__nav__wrapper">
+			<button class="mobile__nav-close">X</button>
+			<ul>
+				<li><a href="#">PAGES</a></li>
+				<li><a href="#">DOCTORS</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">BLOG</a></li>	
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__hero">
+				<div class="header__hero-cross-img">
+					<img src="./assets/images/header/cross.png" alt="">
+				</div>
+				<div class="header__text">
+					<div class="header__text__arrow-component">
+						<img class="header__text__arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
+						<span class="header__text__arrow-component-text-1">Hello</span>
+						<span class="header__text__arrow-component-text-2"> There</span>
+					</div>
+					<h1>I’m Michale Smith
+						Ui & Ux Designer</h1>
+					<p>I'm creative designer based in New York, and I'm very passionate
+						and dedicated to my work.</p>
+					<button>Hire Me <img src="./assets/images/icons/arrow-right.svg" alt=""> </button>
+				</div>
+				<div class="header__hero-your-img">
+					<img src="./assets/images/header/your__images__here.png" alt="your__images__here">
+					<div class="header__hero-award">
+						<img src="./assets/images/icons/award__icon.svg" alt="header__hero-award__img">
+						<span>Best Design
+							Award.</span>
+					</div>
+					<div class="header__hero-customers">
+						<img src="./assets/images/icons/customers__icon.svg" alt="header__hero-customers__img">
+						<span class="header__hero-customers__counter">2k+</span>
+						<span class="header__hero-customers__counter-text">Happy
+							Customers</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="section__services">
+			<div class="section__services__side-dots">
+				<img src="./assets/images/section__services/dots.png" alt="">
+			</div>
+			<div class="arrow-component">
+				<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
+				<span class="arrow-component-text-1">My</span>
+				<span class="arrow-component-text-2">Services</span>
+			</div>
+			<h2 class="section__services-title">Provide Wide Range of
+				Digital Services</h2>
+			<div class="section__services__block__grid">
+				<div class="section__services__block active-block">
+					<img src="./assets/images/icons/ui-ux__icon.svg" alt="">
+					<h3>Ui/Ux Design</h3>
+					<article>Dolor repellendus tempo ribus aue
+						quibusdam offi ciis debitis rerum na
+						aibus minima veniam.</article>
+					<a href="#">Read More</a>
+				</div>
+				<div class="section__services__block">
+					<img src="./assets/images/icons/mobile__app__icon.svg" alt="">
+					<h3>Mobile App Design</h3>
+					<article>Dolor repellendus tempo ribus aue
+						quibusdam offi ciis debitis rerum na
+						aibus minima veniam.</article>
+					<a href="">Read More</a>
+				</div>
+				<div class="section__services__block">
+					<img src="./assets/images/icons/web__design__icon.svg" alt="">
+					<h3>Web Design</h3>
+					<article>Dolor repellendus tempo ribus aue
+						quibusdam offi ciis debitis rerum na
+						aibus minima veniam.</article>
+					<a href="">Read More</a>
+				</div>
+			</div>
+		</section>
+		<section class="section__about-me">
+			<div class="section__about-me__grid">
+				<div class="section__about__me__img">
+					<div class="section__about-me__img-main">
+						<img src="./assets/images/section__about-me/your__images_here__1.jpg" alt="">
+					</div>
+					<div class="section__about__me__img-small">
+						<div class="section__about-me__img-small-two">
+							<img src="./assets/images/section__about-me/your__images_here__2.jpg" alt="">
+						</div>
+						<div class="section__about-me__img-small-three">
+							<img src="./assets/images/section__about-me/your__images_here__3.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="section__about-me__article">
+					<div class="arrow-component">
+						<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
+						<span class="arrow-component-text-1">About</span>
+						<span class="arrow-component-text-2">Me</span>
+					</div>
+					<h2>I Enjoy Solving Problems
+						With Scalable Solutions
+					</h2>
+					<article>Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
+						aeci velit, sed quia non numquam eius modi tempora incidunt lao
+						magnam aliquam quaerat voluptatem reprehenderit.
+						
+						Modi tempora incidunt ut lao magnam aliquam quaerat voluptatem
+						reprehenderit non numquam eius.
+					</article>
+					<a class="section__about-me__download-btn" href="">Download CV <img src="./assets/images/icons/arrow-right.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="section__about-me__statistics__grid">
+				<div class="section__about-me__statistics__block">
+					<img src="./assets/images/section__about-me/statistics__graphic.jpg" alt="statistics__graphic">
+					<h3>Graphic Design</h3>
+				</div>
+				<div class="section__about-me__statistics__block">
+					<img src="./assets/images/section__about-me/statistics__web.jpg" alt="statistics__web">
+					<h3>Web Designing</h3>
+				</div>
+				<div class="section__about-me__statistics__block">
+					<img src="./assets/images/section__about-me/statistics__brand.jpg" alt="statistics__brand">
+					<h3>Brand Design</h3>
+				</div>
+				<div class="section__about-me__statistics__block">
+					<img src="./assets/images/section__about-me/statistics_web__dev.jpg" alt="statistics_web__dev">
+					<h3>Web Development</h3>
+				</div>
+			</div>
+		</section>
+		<section class="section__my-recent-projects">
+			<div class="arrow-component">
+				<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
+				<span class="arrow-component-text-1">Recent</span>
+				<span class="arrow-component-text-2">Projects</span>
+			</div>
+			<div class="section__my-recent-projects__header">
+				<h2>My Recent Projects</h2>
+				<div class="section__my-recent-projects__slider-btn">
+					<button class="section__my-recent-projects__btn-next"><img src="./assets/images/icons/arrow-next-inactive.svg" alt=""></button>
+					<button class="section__my-recent-projects__btn-prev"><img src="./assets/images/icons/arrow-prev-active.svg" alt=""></button>
+				</div>
+			</div>
+			<div class="section__my-recent-projects__grid">
+				<div class="section__my-recent-projects__block">
+					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__1.jpg" alt="">
+					<div class="section__my-recent-projects__block__text">
+						<span>Analytics, UI-Ux</span>
+						<h4>Branding & Digital Video Campaign
+							For George’s Cafe</h4>
+						<article>Lorem Ipsum Is Simply Dummy Text Of The
+							Printing And Typesetting Industry.</article>
+						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="section__my-recent-projects__block">
+					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__2.jpg" alt="">
+					<div class="section__my-recent-projects__block__text">
+						<span>Mobile Apps</span>
+						<h4>Branding & Digital Video Campaign
+							For George’s Cafe</h4>
+						<article>Lorem Ipsum Is Simply Dummy Text Of The
+							Printing And Typesetting Industry.</article>
+						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="section__my-recent-projects__block">
+					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__3.jpg" alt="">
+					<div class="section__my-recent-projects__block__text">
+						<span>Web Development</span>
+						<h4>Branding & Digital Video Campaign
+							For George’s Cafe</h4>
+						<article>Lorem Ipsum Is Simply Dummy Text Of The
+							Printing And Typesetting Industry.</article>
+						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="section__my-recent-projects__explore-more-btn-wrapper">
+				<a class="section__my-recent-projects__explore-more-btn" href="#">Explore More</a>
+			</div>			
+		</section>
+		<section class="section__my-work-example">
+			<div class="section__my-work-example__wrapper">
+				<div class="section__my-work-example__cross-img">
+					<img src="./assets/images/header/cross.png" alt="">
+				</div>
+				<div class="arrow-component center">
+					<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
+					<span class="arrow-component-text-1">My</span>
+					<span class="arrow-component-text-2">Portfolio</span>
+				</div>
+				<h2>My Work Example</h2>
+				<nav class="section__my-work-example__nav">
+					<ul>
+						<li><a class="active-mini-nav" href="">All</a></li>
+						<li><a href="">Branding</a></li>
+						<li><a href="">Photography</a></li>
+						<li><a href="">Fashion</a></li>
+						<li><a href="">Product</a></li>
+					</ul>
+				</nav>
+				<div class="section__my-work-example__grid">
+					<div class="section__my-work-example__box">
+						<h5>Motion Graphics</h5>
+						<span>Android App</span>
+						<img src="./assets/images/section__my-work-example/your__images_here__1.jpg" alt="">
+					</div>
+					<div class="section__my-work-example__box">
+						<h5>E-Learning App</h5>
+						<span>IOS App</span>
+						<img src="./assets/images/section__my-work-example/your__images_here__2.jpg" alt="">
+					</div>
+					<div class="section__my-work-example__box">
+						<h5>Visual Design</h5>
+						<span>Android App</span>
+						<img src="./assets/images/section__my-work-example/your__images_here__3.jpg" alt="">
+					</div>
+					<div class="section__my-work-example__box">
+						<h5>Business Card</h5>
+						<span>Desktop</span>
+						<img src="./assets/images/section__my-work-example/your__images_here__4.jpg" alt="">
+					</div>
+					<div class="section__my-work-example__box">
+						<h5>Mockup</h5>
+						<span>Website</span>
+						<img src="./assets/images/section__my-work-example/your__images_here__5.jpg" alt="">
+					</div>
+					<div class="section__my-work-example__box">
+						<h5>Web Application</h5>
+						<span>Desktop</span>
+						<img src="./assets/images/section__my-work-example/your__images_here__6.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section__feedback">
+			<img class="section__feedback__bg-img" src="./assets/images/section__feedback/bg.jpg" alt="">
+			<div class="section__feedback__wrapper">
+				<img src="./assets/images/section__feedback/bxs_quote-left.png" alt="" class="section__feedback__left-quote">
+				<img src="./assets/images/section__feedback/bxs_quote-right.png" alt="" class="section__feedback__right-quote">
+				<div class="section__feedback__header-text">
+					<div class="arrow-component center">
+						<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
+						<span class="arrow-component-text-1">Client</span>
+						<span class="arrow-component-text-2">Testimonial</span>
+					</div>
+					<h2>Feedback From Client</h2>
+				</div>
+				<div class="section__feedback__grid">
+					<div class="section__feedback__grid__block">
+						<div class="section__feedback__grid__block__article-wrapper">
+							<article class="section__feedback__grid__block__article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+								typesetting industry.
+							</article>
+							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
+						</div>
+						<div class="section__feedback__grid__block__client-profile">
+							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar.png" alt="">
+							<div class="section__feedback__grid__block__client-profile__name">
+								<h5>Michale Doie</h5>
+								<span>Product Designer</span>
+								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="section__feedback__grid__block">
+						<div class="section__feedback__grid__block__article-wrapper">
+							<article class="section__feedback__grid__block__article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+								typesetting industry.
+							</article>
+							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
+						</div>
+						<div class="section__feedback__grid__block__client-profile">
+							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar__1.png" alt="">
+							<div class="section__feedback__grid__block__client-profile__name">
+								<h5>Adam Smith</h5>
+								<span>Designer</span>
+								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section__feedback__dots">
+					<img class="section__feedback__dots__img" src="./assets/images/section__feedback/Bubble.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="section__contact">
+			<div class="section__contact__grid">
+				<div class="section__contact__grid__block">
+					<img class="section__contact__grid__block__img" src="./assets/images/section__contact/your__images__here.jpg" alt="">
+				</div>
+				<div class="section__contact__grid__block">
+					<div class="arrow-component">
+						<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
+						<span class="arrow-component-text-1">Get In</span>
+						<span class="arrow-component-text-2">Touch</span>
+					</div>
+					<h2>Feel Free to Contact</h2>
+					<form action="" class="section__contact__grid__block__form">
+						<div class="section__contact__grid__block__form__wrapper">
+							<div class="section__contact__grid__block__form__block__input-name__wrapper">
+								<input class="section__contact__grid__block__form__block__input-name" type="text" placeholder="Enter Name">
+							</div>
+							<div class="section__contact__grid__block__form__block__input-email__wrapper">
+								<input class="section__contact__grid__block__form__block__input-email" type="text" placeholder="Enter Email">
+							</div>
+							<div class="section__contact__grid__block__form__block__input-phone__wrapper">
+								<input class="section__contact__grid__block__form__block__input-phone" type="text" placeholder="Enter Phone">
+							</div>
+							<div class="section__contact__grid__block__form__block__input-subject__wrapper">
+								<input class="section__contact__grid__block__form__block__input-subject" type="text" placeholder="Enter Subject">
+							</div>
+						</div>
+						<div class="section__contact__grid__block__form__block__input-message__wrapper">
+							<textarea class="section__contact__grid__block__form__block__input-message" placeholder="Enter Message" name="" id="" cols="30" rows="1"></textarea>
+						</div>
+						<div class="section__contact__grid__block__form__submit-btn-wrapper">
+							<button type="submit">Contact Us <img src="./assets/images/icons/arrow-right.svg" alt=""></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="section__blog">
+			<div class="arrow-component center">
+				<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
+				<span class="arrow-component-text-1">Letest</span>
+				<span class="arrow-component-text-2">Blogs</span>
+			</div>
+			<h2>Blog & Articles</h2>
+			<div class="section__blog__grid">
+				<div class="section__blog__grid__block">
+					<img src="./assets/images/section__blog/your__image__here.jpg" alt="">
+					<div class="section__blog__grid__block__text">
+						<div class="section__blog__grid__block__text__author-date">
+							<span class="section__blog__grid__block__text__author">By David William</span>
+							<span class="section__blog__grid__block__text__date">Mar 8, 2022</span>
+						</div>
+						<h3 class="section__blog__grid__block__text__header">Quis autem vea eum
+							iure reprehenderit</h3>
+						<article class="section__blog__grid__block__text__article">Dolor repellendus temporibus autem
+							quibusdam officiis debitis rerum nece
+							aibus minima veniam.</article>
+						<a class="section__blog__grid__block__text__link" href="">Read More</a>
+					</div>
+				</div>
+				<div class="section__blog__grid__block">
+					<img src="./assets/images/section__blog/your__image__here__1.jpg" alt="">
+					<div class="section__blog__grid__block__text">
+						<div class="section__blog__grid__block__text__author-date">
+							<span class="section__blog__grid__block__text__author">By Will Doie</span>
+							<span class="section__blog__grid__block__text__date">Mar 8, 2022</span>
+						</div>
+						<h3 class="section__blog__grid__block__text__header">Quis autem vea eum
+							iure reprehenderit</h3>
+						<article class="section__blog__grid__block__text__article">Dolor repellendus temporibus autem
+							quibusdam officiis debitis rerum nece
+							aibus minima veniam.</article>
+						<a class="section__blog__grid__block__text__link" href="">Read More</a>
+					</div>
+				</div>
+				<div class="section__blog__grid__block">
+					<img src="./assets/images/section__blog/your__image__here__2.jpg" alt="">
+					<div class="section__blog__grid__block__text">
+						<div class="section__blog__grid__block__text__author-date">
+							<span class="section__blog__grid__block__text__author">By Adam Smith</span>
+							<span class="section__blog__grid__block__text__date">Mar 8, 2022</span>
+						</div>
+						<h3 class="section__blog__grid__block__text__header">Quis autem vea eum
+							iure reprehenderit</h3>
+						<article class="section__blog__grid__block__text__article">Dolor repellendus temporibus autem
+							quibusdam officiis debitis rerum nece
+							aibus minima veniam.</article>
+						<a class="section__blog__grid__block__text__link" href="">Read More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__container__footer-logo">
+					<p class="footer__logo-first">Port</p>
+					<p class="footer__logo-second">folio.</p>
+			</div>
+			<nav class="footer__container__footer-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contract</a></li>
+				</ul>
+			</nav>
+			<div class="footer__container__footer-socials">
+				<a href="#"><img src="./assets/images/footer/socials__icon__1.svg" alt=""></a>
+				<a href="#"><img src="./assets/images/footer/socials__icon__2.svg" alt=""></a>
+				<a href="#"><img src="./assets/images/footer/socials__icon__3.svg" alt=""></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
