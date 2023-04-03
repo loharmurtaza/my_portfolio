@@ -236,7 +236,7 @@ legend {
   display: flex;
   position: relative;
   width: 100vw;
-  background-image: url(../../assets/images/header/header__bg.jpg);
+  background-image: url(../assets/images/header__bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -1129,7 +1129,7 @@ legend {
 }
 
 .footer {
-  background-image: url(../../assets/images/footer/footer__bg.jpg);
+  background-image: url(../assets/images/footer__bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
