@@ -13,6 +13,12 @@
 	width: 100%;
 	justify-content: space-between;
 }
+.section__my-recent-projects__slider-btn {
+	display: flex;
+	position: relative;
+	height: 90px;
+	width: 90px;
+}
 .section__my-recent-projects__grid {
 	display: grid;
 	justify-content: center;

@@ -519,23 +519,56 @@ legend {
 }
 
 .section__about-me__img-main {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
   margin-right: 29px;
+}
+.section__about-me__img-main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section__about__me__img-small {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 28px;
 }
 
-.section__about-me__img-small-two {
+.section__about-me__img-small-one {
+  display: flex;
+  position: relative;
   width: 205px;
   height: 240px;
 }
+.section__about-me__img-small-one img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
-.section__about-me__img-small-three {
+.section__about-me__img-small-two {
+  display: flex;
+  position: relative;
   width: 205px;
   height: 240px;
+}
+.section__about-me__img-small-two img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section__about-me__article {
@@ -633,6 +666,13 @@ legend {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.section__my-recent-projects__slider-btn {
+  display: flex;
+  position: relative;
+  height: 90px;
+  width: 90px;
 }
 
 .section__my-recent-projects__grid {
@@ -1254,15 +1294,18 @@ legend {
     grid-template-rows: 282px 282px;
     row-gap: 57px;
   }
+  .section__my-recent-projects {
+    margin-bottom: 50px;
+  }
   .section__my-recent-projects__header {
     justify-content: space-around;
   }
   .section__my-recent-projects__grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 377px;
+    grid-template-columns: 370px;
     grid-template-rows: 514px 514px 514px;
-    row-gap: 34.5px;
+    row-gap: 17px;
   }
   .section__my-work-example__grid {
     display: grid;
@@ -1275,7 +1318,7 @@ legend {
   .section__feedback__grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 555px;
+    grid-template-columns: 370px;
     grid-template-rows: 261px 261px;
     row-gap: 45px;
   }
@@ -1346,20 +1389,38 @@ legend {
   .header__hero-customers__counter {
     left: 0;
   }
+  .section__about-me {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   .section__about-me__grid {
     display: grid;
     justify-content: center;
-    padding: 20px;
-    grid-template-columns: 400px;
-    grid-template-rows: 507px 507px;
-    row-gap: 57px;
+    grid-template-columns: 370px;
+    grid-template-rows: 400px 507px;
+    row-gap: 20px;
   }
   .section__about-me__statistics__grid {
     display: grid;
     justify-content: center;
+    margin-top: 50px;
     grid-template-columns: 261px;
     grid-template-rows: 282px 282px 282px;
-    row-gap: 57px;
+    row-gap: 20px;
+  }
+  .section__about-me__img-main {
+    margin-right: 13px;
+  }
+  .section__about__me__img-small {
+    gap: 14px;
+  }
+  .section__about-me__img-small-one {
+    width: 102px;
+    height: 120px;
+  }
+  .section__about-me__img-small-two {
+    width: 102px;
+    height: 120px;
   }
   .section__about-me__article h2 {
     font-size: 36px;

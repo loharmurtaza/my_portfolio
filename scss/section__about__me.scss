@@ -17,20 +17,50 @@
 	display: flex;
 }
 .section__about-me__img-main {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 100%;
 	margin-right: 29px;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		object-fit: cover;
+	}
 }
 .section__about__me__img-small {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	gap: 28px;
 }
-.section__about-me__img-small-two {
+.section__about-me__img-small-one {
+	display: flex;
+	position: relative;
 	width: 205px;
 	height: 240px;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		object-fit: cover;
+	}
 }
-.section__about-me__img-small-three {
+.section__about-me__img-small-two {
+	display: flex;
+	position: relative;
 	width: 205px;
 	height: 240px;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		object-fit: cover;
+	}
 }
 .section__about-me__article {
 	margin-top: 34px;
