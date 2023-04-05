@@ -1,9 +1,9 @@
-.navbar {
+.nav {
 	display: flex;
 	align-items: center;
 	width: 100%;
 }
-.navbar__container{
+.nav__container{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -29,7 +29,7 @@
 		margin-left: 76px;
 	}
 }
-.navbar__logo {
+.nav__logo {
 	display: flex;
 	font-size: 30px;
 	font-weight: 700;
@@ -40,13 +40,13 @@
 		color: rgba(242, 34, 37, 1);
 	}
 }
-.navbar__logo-first {
+.nav__logo-first {
 	color: black;
 }
-.navbar__logo-second {
+.nav__logo-second {
 	color: rgba(242, 34, 37, 1);
 }
-.navbar__logo-span {
+.nav__logo-span {
 	box-sizing: border-box;
 	color: rgba(242, 34, 37, 1);
 }

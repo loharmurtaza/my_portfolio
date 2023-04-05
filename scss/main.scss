@@ -18,6 +18,11 @@ html {
 	overflow-x: hidden;
 	color: gray;
 }
+body {
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+	min-height: 100vh;
+}
 .main {
 	max-width: 1220px;
 	margin: 0 auto;

@@ -108,13 +108,13 @@ legend {
   display: block;
 }
 
-.navbar {
+.nav {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.navbar__container {
+.nav__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,45 +123,45 @@ legend {
   padding: 0 10px;
   height: 100px;
 }
-.navbar__container ul {
+.nav__container ul {
   margin-left: 217px;
   display: flex;
   gap: 40px;
 }
-.navbar__container ul li {
+.nav__container ul li {
   font-size: 16px;
 }
-.navbar__container ul a {
+.nav__container ul a {
   transition: 0.25s;
 }
-.navbar__container ul a:hover {
+.nav__container ul a:hover {
   color: black;
 }
-.navbar__container button {
+.nav__container button {
   margin-left: 76px;
 }
 
-.navbar__logo {
+.nav__logo {
   display: flex;
   font-size: 30px;
   font-weight: 700;
 }
-.navbar__logo:first-child {
+.nav__logo:first-child {
   color: black;
 }
-.navbar__logo:last-child {
+.nav__logo:last-child {
   color: rgb(242, 34, 37);
 }
 
-.navbar__logo-first {
+.nav__logo-first {
   color: black;
 }
 
-.navbar__logo-second {
+.nav__logo-second {
   color: rgb(242, 34, 37);
 }
 
-.navbar__logo-span {
+.nav__logo-span {
   box-sizing: border-box;
   color: rgb(242, 34, 37);
 }
@@ -1174,7 +1174,6 @@ legend {
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
-  height: 476px;
   display: flex;
   justify-content: center;
   margin-top: 140px;
@@ -1250,13 +1249,13 @@ legend {
   .arrow-component {
     justify-content: center;
   }
-  .navbar ul {
+  .nav__container ul {
     display: none;
   }
-  .navbar .nav__login-btn {
+  .nav__login-btn {
     display: none;
   }
-  .navbar .nav__signin-btn {
+  .nav__signin-btn {
     display: none;
   }
   .nav__contact-btn {
@@ -1265,10 +1264,10 @@ legend {
   .mobile__nav-burger-btn {
     display: flex;
   }
-  .navbar {
+  .nav {
     width: 100%;
   }
-  .navbar__container {
+  .nav__container {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -1325,7 +1324,7 @@ legend {
   .section__contact__grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 418px;
+    grid-template-columns: 370px;
     grid-template-rows: 586px 586px;
     row-gap: 78px;
   }
@@ -1500,6 +1499,12 @@ html {
   color: rgb(255, 255, 255);
   overflow-x: hidden;
   color: gray;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
 }
 
 .main {
