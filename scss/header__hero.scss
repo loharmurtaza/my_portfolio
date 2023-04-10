@@ -1,5 +1,6 @@
 .header {
 	display: flex;
+	justify-content: center;
 	position: relative;
 	width: 100vw;
 	background-image: url(../assets/images/header__bg.jpg);
@@ -9,13 +10,9 @@
 	background-attachment: fixed;
 }
 .header__container {
-	max-width: 1220px;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-.header__hero {
 	display: flex;
 	position: relative;
+	max-width: 1174px;
 }
 .header__text__arrow-component {
 	display: flex;

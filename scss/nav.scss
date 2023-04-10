@@ -6,12 +6,12 @@
 .nav__container{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: start;
 	max-width: 1220px;
 	margin: 0 auto;
-	padding: 0 10px;
 	height: 100px;
 	ul {
+		width: 585px;
 		margin-left: 217px;
 		display: flex;
 		gap: 40px;
@@ -25,14 +25,12 @@
 			color: black;
 		}
 	}
-	button {
-		margin-left: 76px;
-	}
 }
 .nav__logo {
 	display: flex;
 	font-size: 30px;
 	font-weight: 700;
+	width: 141px;
 	&:first-child {
 		color: black;
 	}
@@ -55,6 +53,7 @@
 	width: 50px;
 }
 .nav__contact-btn {
+	margin-left: 76px;
 	width: 155px;
 	height: 49px;
 	border-radius: 10px;
