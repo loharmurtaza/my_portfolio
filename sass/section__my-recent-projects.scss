@@ -3,6 +3,7 @@
 	flex-direction: column;
 	position: relative;
 	margin-bottom: 140px;
+	width: 100%;
 	h2 {
 		@include headerTwo;
 		margin-bottom: 74px;
@@ -11,27 +12,23 @@
 .section__my-recent-projects__header {
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: start;
 }
-.section__my-recent-projects__slider-btn {
-	display: flex;
-	position: relative;
-	height: 90px;
-	width: 90px;
-}
+
 .section__my-recent-projects__grid {
-	display: grid;
+	display: flex;
 	justify-content: center;
-	grid-template-columns: 377px 377px 377px;
-	grid-template-rows: 514px;
-	column-gap: 34.5px;
 }
 .section__my-recent-projects__block {
 	box-shadow: 0.3em 0.3em 1em rgba(189, 188, 188, 0.3);
 	transition: .25s;
+	display: flex;
+	width: 377px;
+	height: 514px;
+	height: 100%;
 }
 .section__my-recent-projects__block:hover {
-	scale: 1.05;
+	transform: scale(1.05);
 }
 .section__my-recent-projects__block__text {
 	margin: 27px 13px 28px 32px;
@@ -51,6 +48,7 @@
 	}
 }
 .section__my-recent-projects__block__view-more-link {
+	display: flex;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 19px;
@@ -84,3 +82,74 @@
 .section__my-recent-projects__explore-more-btn:hover {
 	background-color: rgb(255, 0, 4);
 }
+
+
+
+.carousel {
+	width: 100%;
+	height: 100%;
+}
+.slick-arrow {
+	position: absolute;
+	z-index: 1;
+	top: -100px;
+	right: 0;
+	border: none;
+	background-color: none;
+	padding: 0;
+	cursor: pointer;
+	font-size: 0;
+}
+.slick-prev {
+	display: flex;
+	position: absolute;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+		&::before {
+			content: url(../assets/images/icons/arrow-prev-active.svg);
+			width: 50px;
+			height: 50px;
+		}
+		&:hover, &:focus {
+			opacity: 0.5;
+		}
+}
+.slick-next {
+	display: flex;
+	position: absolute;
+	right: 0;
+	width: 50px;
+	height: 50px;
+		&::before {
+			content: url(../assets/images/icons/arrow-next-inactive.svg);
+			width: 50px;
+			height: 50px;
+		}
+		&:hover, &:focus {
+			opacity: 0.5;
+		}
+}
+.slick-dots {
+	list-style: none;
+	position: absolute;
+	z-index: 3;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	li {
+		background-color: rgb(235, 26, 26);
+		border-radius: 50%;
+		width: 12px;
+		height: 12px;
+		font-size: 0;
+		transition: .25s;
+		&:hover, &:focus {
+			opacity: 0.5;
+		}
+	}
+}
+.slick-disabled {
+	visibility: hidden;
+}
+

@@ -88,14 +88,15 @@
 		margin-bottom: 50px;
 	}
 	.section__my-recent-projects__header {
-		justify-content: space-around;
-	}
-	.section__my-recent-projects__grid {
-		display: grid;
 		justify-content: center;
-		grid-template-columns: 370px 370px;
-		grid-template-rows: 514px 514px;
-		row-gap: 17px;
+	}
+	.slick-prev {
+		top: -37px;
+		right: 50%;
+	}
+	.slick-next {
+		top: -37px;
+		right: calc(50% - 50px);
 	}
 	.section__my-work-example {
 		margin-top: 50px;
@@ -115,11 +116,11 @@
 		margin-bottom: 50px;
 	}
 	.section__feedback__grid {
-		display: grid;
-		justify-content: center;
-		grid-template-columns: 370px 370px;
-		grid-template-rows: 261px;
-		row-gap: 45px;
+		// display: grid;
+		// justify-content: center;
+		// grid-template-columns: 370px 370px;
+		// grid-template-rows: 261px;
+		// row-gap: 45px;
 	}
 	.section__feedback__left-quote {
 		left: 0;
@@ -131,7 +132,7 @@
 		padding: 28px;
 	}
 	.section__contact {
-		margin-top: 50px;
+		margin-top: 100px;
 	}
 	.section__contact__grid {
 		display: grid;
@@ -196,9 +197,9 @@
 		column-gap: 10px;
 		row-gap: 10px;
 	}
-	.section__my-recent-projects__grid {
-		grid-template-columns: 340px 340px;
-	}
+	// .section__my-recent-projects__grid {
+	// 	grid-template-columns: 340px 340px;
+	// }
 	.section__my-work-example__grid {
 		grid-template-columns: 347px 347px;
 		grid-template-rows: repeat(3, 564px);
@@ -301,10 +302,10 @@
 			font-size: 36px;
 		}
 	}
-	.section__my-recent-projects__grid {
-    grid-template-columns: 340px;
-		grid-template-rows: repeat(3, 514px);
-	}
+	// .section__my-recent-projects__grid {
+  //   grid-template-columns: 340px;
+	// 	grid-template-rows: repeat(3, 514px);
+	// }
 	.section__my-recent-projects {
 		h2 {
 			font-size: 36px;
@@ -327,10 +328,10 @@
 			gap: 10px;
 		}
 	}
-	.section__feedback__grid {
-		grid-template-columns: 370px;
-		grid-template-rows: repeat(2, 261px) ;
-	}
+	// .section__feedback__grid {
+	// 	grid-template-columns: 370px;
+	// 	grid-template-rows: repeat(2, 261px) ;
+	// }
 	.section__feedback__header-text {
 		h2 {
 			font-size: 36px;
@@ -404,18 +405,18 @@
 	.section__my-work-example__grid {
 		row-gap: 10px;
 	}
-	.section__feedback__grid {
-		display: grid;
-		justify-content: center;
-		grid-template-columns: 370px;
-		grid-template-rows: 261px 261px;
-		row-gap: 45px;
-	}
+	// .section__feedback__grid {
+	// 	display: grid;
+	// 	justify-content: center;
+	// 	grid-template-columns: 370px;
+	// 	grid-template-rows: 261px 261px;
+	// 	row-gap: 45px;
+	// }
 	.section__feedback__left-quote {
 		top: 170px;
 	}
 	.section__feedback__right-quote {
-		top: 800px;
+		top: 600px;
 	}
 	.section__contact {
 		width: 370px;

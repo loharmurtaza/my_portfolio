@@ -36,13 +36,15 @@
 	}
 }
 .section__feedback__grid {
-	display: grid;
+	display: flex;
 	justify-content: center;
-	grid-template-columns: 555px 555px;
-	grid-template-rows: 261px;
-	column-gap: 45px;
+	// justify-content: center;
+	// grid-template-columns: 555px 555px;
+	// grid-template-rows: 261px;
+	// column-gap: 45px;
 }
 .section__feedback__grid__block {
+	width: 555px;
 	article {
 		border-top: 7px solid #F22225;
 		border-radius: 10px;

@@ -8,6 +8,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+	<script type="text/javascript" src="./javascript/slick.min.js" defer></script>
 	<script src="./javascript/main.js" defer></script>
 	<script src="./javascript/buttons.js" defer></script>
 	<link rel="stylesheet" href="./sass/main.css">
@@ -178,12 +181,41 @@
 			</div>
 			<div class="section__my-recent-projects__header">
 				<h2>My Recent Projects</h2>
-				<div class="section__my-recent-projects__slider-btn">
-					<button class="section__my-recent-projects__btn-next"><img src="./assets/images/icons/arrow-next-inactive.svg" alt=""></button>
-					<button class="section__my-recent-projects__btn-prev"><img src="./assets/images/icons/arrow-prev-active.svg" alt=""></button>
-				</div>
 			</div>
 			<div class="section__my-recent-projects__grid">
+				<div class="section__my-recent-projects__block">
+					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__1.jpg" alt="">
+					<div class="section__my-recent-projects__block__text">
+						<span>Analytics, UI-Ux</span>
+						<h4>Branding & Digital Video Campaign
+							For George’s Cafe</h4>
+						<article>Lorem Ipsum Is Simply Dummy Text Of The
+							Printing And Typesetting Industry.</article>
+						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="section__my-recent-projects__block">
+					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__2.jpg" alt="">
+					<div class="section__my-recent-projects__block__text">
+						<span>Mobile Apps</span>
+						<h4>Branding & Digital Video Campaign
+							For George’s Cafe</h4>
+						<article>Lorem Ipsum Is Simply Dummy Text Of The
+							Printing And Typesetting Industry.</article>
+						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="section__my-recent-projects__block">
+					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__3.jpg" alt="">
+					<div class="section__my-recent-projects__block__text">
+						<span>Web Development</span>
+						<h4>Branding & Digital Video Campaign
+							For George’s Cafe</h4>
+						<article>Lorem Ipsum Is Simply Dummy Text Of The
+							Printing And Typesetting Industry.</article>
+						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
+					</div>
+				</div>
 				<div class="section__my-recent-projects__block">
 					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__1.jpg" alt="">
 					<div class="section__my-recent-projects__block__text">
@@ -324,9 +356,74 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="section__feedback__dots">
-					<img class="section__feedback__dots__img" src="./assets/images/section__feedback/Bubble.png" alt="">
+					<div class="section__feedback__grid__block">
+						<div class="section__feedback__grid__block__article-wrapper">
+							<article class="section__feedback__grid__block__article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+								typesetting industry.
+							</article>
+							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
+						</div>
+						<div class="section__feedback__grid__block__client-profile">
+							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar.png" alt="">
+							<div class="section__feedback__grid__block__client-profile__name">
+								<h5>Michale Doie</h5>
+								<span>Product Designer</span>
+								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="section__feedback__grid__block">
+						<div class="section__feedback__grid__block__article-wrapper">
+							<article class="section__feedback__grid__block__article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+								typesetting industry.
+							</article>
+							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
+						</div>
+						<div class="section__feedback__grid__block__client-profile">
+							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar__1.png" alt="">
+							<div class="section__feedback__grid__block__client-profile__name">
+								<h5>Adam Smith</h5>
+								<span>Designer</span>
+								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="section__feedback__grid__block">
+						<div class="section__feedback__grid__block__article-wrapper">
+							<article class="section__feedback__grid__block__article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+								typesetting industry.
+							</article>
+							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
+						</div>
+						<div class="section__feedback__grid__block__client-profile">
+							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar.png" alt="">
+							<div class="section__feedback__grid__block__client-profile__name">
+								<h5>Michale Doie</h5>
+								<span>Product Designer</span>
+								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="section__feedback__grid__block">
+						<div class="section__feedback__grid__block__article-wrapper">
+							<article class="section__feedback__grid__block__article">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
+								typesetting industry.
+							</article>
+							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
+						</div>
+						<div class="section__feedback__grid__block__client-profile">
+							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar__1.png" alt="">
+							<div class="section__feedback__grid__block__client-profile__name">
+								<h5>Adam Smith</h5>
+								<span>Designer</span>
+								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

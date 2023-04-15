@@ -1,16 +1,18 @@
-@import './reset.scss';
-@import './mixins.scss';
-@import './nav.scss';
-@import './header__hero.scss';
-@import './section__services.scss';
-@import './section__about__me.scss';
-@import './section__my-recent-projects.scss';
-@import './section__my-work-example.scss';
-@import './section__feedback.scss';
-@import './section__contact.scss';
-@import './section__blog.scss';
-@import './footer.scss';
-@import './media.scss';
+@import './reset';
+@import './mixins';
+@import './nav';
+@import './header__hero';
+@import './section__services';
+@import './section__about__me';
+@import './slick-theme';
+@import './slick';
+@import './section__my-recent-projects';
+@import './section__my-work-example';
+@import './section__feedback';
+@import './section__contact';
+@import './section__blog';
+@import './footer';
+@import './media';
 
 html {
 	font-family: 'Inter', sans-serif;
