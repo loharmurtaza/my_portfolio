@@ -5,6 +5,9 @@
 	.header__hero {
 		display: flex;
 		flex-direction: column;
+		h1 {
+
+		}
 	}
 }
 
@@ -371,6 +374,9 @@
 		margin-top: 30px;
 		h1 {
 			width: 370px;
+			height: 48px;
+			margin-bottom: 10px;
+			font-size: 44px;
 		}
 		p {
 			width: 370px;
@@ -405,13 +411,6 @@
 	.section__my-work-example__grid {
 		row-gap: 10px;
 	}
-	// .section__feedback__grid {
-	// 	display: grid;
-	// 	justify-content: center;
-	// 	grid-template-columns: 370px;
-	// 	grid-template-rows: 261px 261px;
-	// 	row-gap: 45px;
-	// }
 	.section__feedback__left-quote {
 		top: 170px;
 	}
