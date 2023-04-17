@@ -57,3 +57,9 @@ body {
 .arrow-component-text-2 {
 	color: #F22225;
 }
+button, a {
+	transition: .25s;
+}
+button:hover, a:hover {
+	scale: 1.05;
+}

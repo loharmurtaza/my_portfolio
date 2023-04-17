@@ -1,7 +1,5 @@
 //section__my-recent-projects slider
 
-
-
 $('.section__my-recent-projects__grid').slick({
 	arrows: true,
 	dots: true,
@@ -40,3 +38,24 @@ $('.section__feedback__grid').slick({
     }
 	]
 })
+
+// running string
+
+const runningString = document.getElementById('running__string')
+const runningLine = 'Ui & Ux Designer'
+const speed = 120
+let i = 0
+console.log(runningString.innerHTML)
+
+function run() {
+	if (i++ < runningLine.length) {
+		runningString.innerHTML = runningLine.substring(0, i) + '|'
+	}
+	else {
+		runningString.innerHTML = ''
+		i = 0
+	}
+	done = setTimeout('run()', speed)
+}
+
+run()

@@ -283,6 +283,10 @@ legend {
   bottom: 393px;
 }
 
+#running__string {
+  color: #F22225;
+}
+
 .header__text {
   display: flex;
   flex-direction: column;
@@ -290,11 +294,11 @@ legend {
   margin-top: 201px;
 }
 .header__text h1 {
+  height: 78px;
   width: 590px;
   font-size: 68px;
   color: black;
   font-weight: 500;
-  margin-bottom: 34px;
 }
 .header__text p {
   width: 552px;
@@ -302,6 +306,7 @@ legend {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 48px;
+  margin-top: 34px;
 }
 .header__text button {
   display: flex;
@@ -347,11 +352,16 @@ legend {
   height: 107px;
   left: -69px;
   bottom: 136px;
+  transition: 0.25s;
 }
 .header__hero-award span {
   margin-left: 5px;
   width: 118px;
   height: 60px;
+}
+
+.header__hero-award:hover {
+  scale: 1.05;
 }
 
 .header__hero-customers {
@@ -367,10 +377,15 @@ legend {
   top: 147px;
   border-radius: 15px;
   box-shadow: 0.3em 0.3em 1em rgba(189, 188, 188, 0.3);
+  transition: 0.25s;
 }
 .header__hero-customers img {
   width: 60px;
   height: 60px;
+}
+
+.header__hero-customers:hover {
+  scale: 1.05;
 }
 
 .header__hero-customers__counter {
@@ -1906,7 +1921,7 @@ legend {
     top: 170px;
   }
   .section__feedback__right-quote {
-    top: 500px;
+    top: 600px;
   }
   .section__contact {
     width: 370px;
@@ -1985,4 +2000,12 @@ body {
 
 .arrow-component-text-2 {
   color: #F22225;
+}
+
+button, a {
+  transition: 0.25s;
+}
+
+button:hover, a:hover {
+  scale: 1.05;
 }/*# sourceMappingURL=main.css.map */

@@ -42,17 +42,20 @@
 	left: -250px;
 	bottom: 393px;
 }
+#running__string {
+	color: #F22225;
+}
 .header__text {
 	display: flex;
 	flex-direction: column;
 	width: 590px;
 	margin-top: 201px;
 		h1 {
+			height: 78px;
 			width: 590px;
 			font-size: 68px;
 			color: black;
 			font-weight: 500;
-			margin-bottom: 34px;
 		}
 		p {
 			width: 552px;
@@ -60,6 +63,7 @@
 			font-size: 18px;
 			font-weight: 400;
 			margin-bottom: 48px;
+			margin-top: 34px;
 		}
 		button {
 			display: flex;
@@ -104,11 +108,15 @@
 	height: 107px;
 	left: -69px;
 	bottom: 136px;
+	transition: .25s;
 	span {
 		margin-left: 5px;
 		width: 118px;
 		height: 60px;
 	}
+}
+.header__hero-award:hover {
+	scale: 1.05;
 }
 .header__hero-customers {
 	position: absolute;
@@ -123,10 +131,14 @@
 	top: 147px;
 	border-radius: 15px;
 	box-shadow: 0.3em 0.3em 1em rgba(189, 188, 188, 0.3);
+	transition: .25s;
 	img {
 		width: 60px;
 		height: 60px;
 	}
+}
+.header__hero-customers:hover {
+	scale: 1.05;
 }
 .header__hero-customers__counter {
 	font-family: 'Inter';
