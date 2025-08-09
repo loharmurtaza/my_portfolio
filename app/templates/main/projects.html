@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-4 fw-bold mb-4">Projects</h1>
+        <p class="lead text-muted">Selected work spanning IoT, ML, and full‑stack development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6 col-xl-4">
+        <div class="card h-100 border-0 shadow-sm project-card">
+          <div class="card-body p-4">
+            <h5 class="card-title fw-bold mb-3">Multi‑functional Infant Care System (MICS)</h5>
+            <p class="card-text text-muted mb-3">
+              A system that interprets infants’ cries and suggests appropriate caregiver actions using DSP and
+              deep learning, with supporting web and networking components.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-primary">Python</span>
+              <span class="badge bg-primary">DSP</span>
+              <span class="badge bg-primary">Deep Learning</span>
+              <span class="badge bg-primary">TensorFlow/Keras</span>
+              <span class="badge bg-primary">OpenCV</span>
+              <span class="badge bg-primary">Pandas/Numpy</span>
+              <span class="badge bg-primary">Web</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-sm btn-outline-secondary" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-primary text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="display-5 fw-bold mb-4">Want to collaborate?</h2>
+        <p class="lead mb-4">Open to roles and projects at the intersection of IoT, ML, and full‑stack.</p>
+        <a href="{{ url_for('main.contact') }}" class="btn btn-warning btn-lg">
+          <i class="fas fa-envelope me-2"></i>Get In Touch
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

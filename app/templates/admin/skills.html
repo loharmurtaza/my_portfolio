@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Manage Skills{% endblock %}
+{% block content %}
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1 class="fw-bold">Skills</h1>
+      <div class="d-flex gap-2">
+        <a href="{{ url_for('admin.new_skill_category') }}" class="btn btn-outline-primary">New Category</a>
+        <a href="{{ url_for('admin.new_skill') }}" class="btn btn-primary">New Skill</a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      {% for cat in categories %}
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="mb-0">{{ cat.name }}</h5>
+              <div>
+                <a href="{{ url_for('admin.edit_skill_category', id=cat.id) }}" class="btn btn-sm btn-outline-primary">Edit</a>
+                <form method="POST" action="{{ url_for('admin.delete_skill_category', id=cat.id) }}" class="d-inline">
+                  {{ (delete_form.hidden_tag() if delete_form else '') }}
+                  <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('Delete this category and its skills?')">Delete</button>
+                </form>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              {% for s in cat.skills.order_by().all() %}
+                <span class="badge bg-secondary">{{ s.name }}</span>
+              {% else %}
+                <span class="text-muted">No skills yet.</span>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="col-12 text-center text-muted">No categories yet.</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
