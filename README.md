@@ -44,8 +44,8 @@ My Portfolio/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd My-Portfolio
+   git clone https://github.com/loharmurtaza/my_portfolio.git
+   cd my_ortfolio
    ```
 
 2. **Create a virtual environment**
