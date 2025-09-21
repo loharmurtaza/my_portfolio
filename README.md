@@ -98,7 +98,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 For questions or suggestions, please contact:
 - Email: loharmurtaza788@gmail.com
-- Phone: +92 317 3447972
 - LinkedIn: [https://www.linkedin.com/in/murtaza788](https://www.linkedin.com/in/murtaza788)
 - GitHub: [https://github.com/loharmurtaza](https://github.com/loharmurtaza)
 - ResearchGate: [https://www.researchgate.net/profile/Ghulam-Murtaza-119](https://www.researchgate.net/profile/Ghulam-Murtaza-119)
