@@ -1,547 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Portfolio</title>
-	<meta name="description" content="Portfolio">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
-	<script type="text/javascript" src="./javascript/slick.min.js" defer></script>
-	<script src="./javascript/main.js" defer></script>
-	<script src="./javascript/buttons.js" defer></script>
-	<link rel="stylesheet" href="./sass/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murtaza Ghulam - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-	<nav class="nav">
-		<div class="nav__container">
-			<div class="nav__logo">
-				<p class="nav__logo-first">Port</p>
-				<p class="nav__logo-second">folio.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Ghulam Murtaza</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
 			</div>
-			<ul>
-				<li class="active"><a href="#">HOME</a></li>
-				<li><a href="#">PAGES</a></li>
-				<li><a href="#">DOCTORS</a></li>
-				<li><a href="#">SERVICES</a></li>
-				<li><a href="#">BLOG</a></li>	
-				<li><a href="#">CONTACT</a></li>
-			</ul>
-			<div class="nav__login">
-				<button class="nav__contact-btn">Contact Us</button>
-			</div>
-			<button class="mobile__nav-burger-btn disabled"><img src="./assets/images/burger-btn.png" alt="burger-btn"></button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
 		</div>
-		<nav class="mobile__nav">
-			<div class="mobile__nav__wrapper">
-				<button class="mobile__nav-close">X</button>
-				<ul>
-					<li><a href="#">PAGES</a></li>
-					<li><a href="#">DOCTORS</a></li>
-					<li><a href="#">SERVICES</a></li>
-					<li><a href="#">BLOG</a></li>	
-					<li><a href="#">CONTACT</a></li>
-				</ul>
 			</div>
 		</nav>
-	</nav>
-	<header class="header">
-		<div class="header__container">
-			<div class="header__hero-cross-img">
-				<img src="./assets/images/header/cross.png" alt="">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight" style="color: #ffc107 !important; font-size: 1.2em !important; font-weight: 800 !important;">Ghulam Murtaza</span>
+                </h1>
+                <h2 class="hero-subtitle">Python Developer & Researcher</h2>
+                <p class="hero-description">
+                    Versatile Python developer and researcher with expertise in AI/ML, backend systems, and IoT technologies. 
+                    Building scalable solutions with FastAPI, Django, and containerized microservices.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
 			</div>
-			<div class="header__text">
-				<div class="header__text__arrow-component">
-					<img class="header__text__arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
-					<span class="header__text__arrow-component-text-1">Hello</span>
-					<span class="header__text__arrow-component-text-2"> There</span>
 				</div>
-				<h1>I’m Michale Smith</h1>
-				<h1 id="running__string">Ui & Ux Designer</h1>
-				<p>I'm creative designer based in New York, and I'm very passionate
-					and dedicated to my work.</p>
-				<button>Hire Me <img src="./assets/images/icons/arrow-right.svg" alt=""> </button>
-			</div>
-			<div class="header__hero-your-img">
-				<img src="./assets/images/header/your__images__here.png" alt="your__images__here">
-				<div class="header__hero-award">
-					<img src="./assets/images/icons/award__icon.svg" alt="header__hero-award__img">
-					<span>Best Design
-						Award.</span>
-				</div>
-				<div class="header__hero-customers">
-					<img src="./assets/images/icons/customers__icon.svg" alt="header__hero-customers__img">
-					<span class="header__hero-customers__counter">2k+</span>
-					<span class="header__hero-customers__counter-text">Happy
-						Customers</span>
-				</div>
-			</div>
+            <div class="hero-image">
+                <img src="profile.jpg" alt="Ghulam Murtaza" class="profile-image">
+                <div class="ai-element-1"></div>
+                <div class="ai-element-2"></div>
+                <div class="ai-element-3"></div>
+                <div class="neural-line-1"></div>
+                <div class="neural-line-2"></div>
+                <div class="neural-line-3"></div>
+            </div>
 		</div>
-	</header>
-	<main class="main">
-		<section class="section__services">
-			<div class="section__services__side-dots">
-				<img src="./assets/images/section__services/dots.png" alt="">
-			</div>
-			<div class="arrow-component">
-				<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
-				<span class="arrow-component-text-1">My</span>
-				<span class="arrow-component-text-2">Services</span>
-			</div>
-			<h2 class="section__services-title">Provide Wide Range of
-				Digital Services</h2>
-			<div class="section__services__block__grid">
-				<div class="section__services__block active-block">
-					<img src="./assets/images/icons/ui-ux__icon.svg" alt="">
-					<h3>Ui/Ux Design</h3>
-					<article>Dolor repellendus tempo ribus aue
-						quibusdam offi ciis debitis rerum na
-						aibus minima veniam.</article>
-					<a href="#">Read More</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a versatile Python developer and researcher with a strong foundation in Mechatronics Engineering and an MSc in IoT & Wireless Technologies. 
+                        I specialize in building scalable backend systems using FastAPI and Django, integrating AI/ML models, and deploying automation-driven solutions.
+                    </p>
+                    <p>
+                        As a published researcher in machine learning applications for healthcare, I combine technical depth with problem-solving and innovation 
+                        to deliver reliable, efficient, and research-backed software solutions. I'm passionate about computer vision, deep learning, and IoT-driven systems.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Publications</p>
 				</div>
-				<div class="section__services__block">
-					<img src="./assets/images/icons/mobile__app__icon.svg" alt="">
-					<h3>Mobile App Design</h3>
-					<article>Dolor repellendus tempo ribus aue
-						quibusdam offi ciis debitis rerum na
-						aibus minima veniam.</article>
-					<a href="#">Read More</a>
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>Years Experience</p>
 				</div>
-				<div class="section__services__block">
-					<img src="./assets/images/icons/web__design__icon.svg" alt="">
-					<h3>Web Design</h3>
-					<article>Dolor repellendus tempo ribus aue
-						quibusdam offi ciis debitis rerum na
-						aibus minima veniam.</article>
-					<a href="#">Read More</a>
+                        <div class="stat">
+                            <h3>2</h3>
+                            <p>Degrees</p>
+				</div>
+				</div>
+				</div>
+		</div>
+	</div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">C/C++</span>
+                    </div>
+			</div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">React JS</span>
+                        <span class="skill-item">Streamlit</span>
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Scikit-learn</span>
+				</div>
+			</div>
+                <div class="skill-category">
+                    <h3>AI/ML & Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">OpenAI API</span>
+                        <span class="skill-item">LLM Agents</span>
+                        <span class="skill-item">Deep Learning</span>
+                        <span class="skill-item">Computer Vision</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">Redis</span>
+                        <span class="skill-item">ChromaDB</span>
+				</div>
+			</div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Kubernetes</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">REST APIs</span>
+                        <span class="skill-item">Selenium</span>
+                        <span class="skill-item">Postman</span>
+                        <span class="skill-item">Jupyter</span>
+                        <span class="skill-item">LaTeX</span>
+					</div>
+						</div>
+					</div>
+				</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+						</div>
+                    <div class="project-content">
+                        <h3>Multi-functional Infant Care System (MICS)</h3>
+                        <p>Built deep learning models for infant cry interpretation and care suggestion using advanced AI techniques for healthcare applications.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Deep Learning</span>
+                            <span>Android Studio</span>
+                            <span>AI/ML</span>
+					</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+						</div>
+					</div>
+				</div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-eye"></i>
+                        </div>
+						</div>
+                    <div class="project-content">
+                        <h3>Swin-UNet Segmentation</h3>
+                        <p>Applied Transformer-based architecture for retinal vessel segmentation, advancing computer vision techniques in medical imaging.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Transformers</span>
+                            <span>Computer Vision</span>
+                            <span>Medical AI</span>
+					</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+						</div>
+					</div>
+				</div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+						</div>
+                    <div class="project-content">
+                        <h3>Diabetic Retinopathy Classification</h3>
+                        <p>Explored different Vision Transformers for the classification of diabetic retinopathy using retinal images, contributing to medical diagnosis automation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Vision Transformers</span>
+                            <span>Computer Vision</span>
+                            <span>Medical Diagnosis</span>
+					</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Details
+                            </a>
+						</div>
+					</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section__about-me">
-			<div class="section__about-me__grid">
-				<div class="section__about__me__img">
-					<div class="section__about-me__img-main">
-						<img src="./assets/images/section__about-me/your__images_here__1.jpg" alt="">
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-date">Aug 2025 – Present</div>
+                    <h3>Python Developer</h3>
+                    <h4>Quantilytics - Remote, UK</h4>
+                    <ul>
+                        <li>Integrated AI agents and LLM APIs (OpenAI) into backend systems</li>
+                        <li>Designed and developed backend services using FastAPI and Django</li>
+                        <li>Worked extensively with PostgreSQL and MongoDB databases</li>
+                        <li>Containerized backend applications using Docker</li>
+                        <li>Managed deployments using Kubernetes for high availability</li>
+                    </ul>
 					</div>
-					<div class="section__about__me__img-small">
-						<div class="section__about-me__img-small-one">
-							<img src="./assets/images/section__about-me/your__images_here__2.jpg" alt="">
+					
+                <div class="experience-card">
+                    <div class="experience-date">June 2023 – Sept 2023</div>
+                    <h3>IT Support Officer</h3>
+                    <h4>i3 Pathfinder Solutions - Karachi, PK</h4>
+                    <ul>
+                        <li>Retrieved and analyzed SQL Server data using Python for sales insights</li>
+                        <li>Optimized SQL databases to support complex data structures</li>
+                        <li>Trained operational staff on terminal automation projects</li>
+                    </ul>
+					</div>
+					
+                <div class="experience-card">
+                    <div class="experience-date">July 2022 – Feb 2023</div>
+                    <h3>Service Engineer</h3>
+                    <h4>Atlas Engineering & Controls - Lahore, PK</h4>
+                    <ul>
+                        <li>Commissioned terminal automation projects</li>
+                        <li>Installed and programmed metering systems at filling bays</li>
+                        <li>Trained operational staff on terminal automation projects</li>
+                    </ul>
+					</div>
+					
+                <div class="experience-card">
+                    <div class="experience-date">Sept 2021 – July 2022</div>
+                    <h3>IT Mentorship Trainee</h3>
+                    <h4>Pakistan State Oil Company - Karachi, PK</h4>
+                    <ul>
+                        <li>Retrieved and analyzed SQL Server data using Python for sales insights</li>
+                        <li>Supported retail automation and SAP-based job creation</li>
+                        <li>Optimized SQL databases to support complex data structures</li>
+                        <li>Collaborated with vendors to gather requirements and provide support</li>
+                    </ul>
 						</div>
-						<div class="section__about-me__img-small-two">
-							<img src="./assets/images/section__about-me/your__images_here__3.jpg" alt="">
-						</div>
 					</div>
 				</div>
-				<div class="section__about-me__article">
-					<div class="arrow-component">
-						<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
-						<span class="arrow-component-text-1">About</span>
-						<span class="arrow-component-text-2">Me</span>
-					</div>
-					<h2>I Enjoy Solving Problems
-						With Scalable Solutions
-					</h2>
-					<article>Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
-						aeci velit, sed quia non numquam eius modi tempora incidunt lao
-						magnam aliquam quaerat voluptatem reprehenderit.
-						
-						Modi tempora incidunt ut lao magnam aliquam quaerat voluptatem
-						reprehenderit non numquam eius.
-					</article>
-					<a class="section__about-me__download-btn" href="">Download CV <img src="./assets/images/icons/arrow-right.svg" alt=""></a>
-				</div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Research Publications</h2>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <h3>Multi-Modal Feature Set-Based Detection of Freezing of Gait in Parkinson's Disease Patients Using SVM</h3>
+                    <p class="authors"><strong>Ghulam Murtaza</strong>, Mohammad Hammoud, Andrey Somov</p>
+                    <p class="journal">IEEE Access</p>
+                    <a href="https://doi.org/10.1109/ACCESS.2025.3585099" class="publication-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
 			</div>
-			<div class="section__about-me__statistics__grid">
-				<div class="section__about-me__statistics__block">
-					<img src="./assets/images/section__about-me/statistics__graphic.jpg" alt="statistics__graphic">
-					<h3>Graphic Design</h3>
-				</div>
-				<div class="section__about-me__statistics__block">
-					<img src="./assets/images/section__about-me/statistics__web.jpg" alt="statistics__web">
-					<h3>Web Designing</h3>
-				</div>
-				<div class="section__about-me__statistics__block">
-					<img src="./assets/images/section__about-me/statistics__brand.jpg" alt="statistics__brand">
-					<h3>Brand Design</h3>
-				</div>
-				<div class="section__about-me__statistics__block">
-					<img src="./assets/images/section__about-me/statistics_web__dev.jpg" alt="statistics_web__dev">
-					<h3>Web Development</h3>
-				</div>
+			
+                <div class="publication-card">
+                    <h3>DoppelGANger-Based Synthesis of Accelerometer Data for Parkinson's Disease Freezing of Gait Detection</h3>
+                    <p class="authors"><strong>Ghulam Murtaza</strong>, Mohammad Hammoud, Andrey Somov</p>
+                    <p class="journal">Research Paper</p>
+                    <a href="#" class="publication-link">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
 			</div>
-		</section>
-		<section class="section__my-recent-projects">
-			<div class="arrow-component">
-				<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
-				<span class="arrow-component-text-1">Recent</span>
-				<span class="arrow-component-text-2">Projects</span>
-			</div>
-			<div class="section__my-recent-projects__header">
-				<h2>My Recent Projects</h2>
-			</div>
-			<div class="section__my-recent-projects__grid">
-				<div class="section__my-recent-projects__block">
-					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__1.jpg" alt="">
-					<div class="section__my-recent-projects__block__text">
-						<span>Analytics, UI-Ux</span>
-						<h4>Branding & Digital Video Campaign
-							For George’s Cafe</h4>
-						<article>Lorem Ipsum Is Simply Dummy Text Of The
-							Printing And Typesetting Industry.</article>
-						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
+
+                <div class="publication-card">
+                    <h3>Percolation Threshold of Graphene Islands on a Dielectric Substrate</h3>
+                    <p class="authors">Mohammadreza Salehpoor, Natalia Khoteeva, Artem Grebenko, Elena Zhukova, Kirill Malgin, <strong>Ghulam Murtaza</strong>, Nikita Gordeev, Nikita Raginov, Oleg Trepalin, Boris Gorshunov, Dmitry Krasnikov, Albert Nasibulin</p>
+                    <p class="journal">Research Paper</p>
+                    <a href="#" class="publication-link">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
 					</div>
 				</div>
-				<div class="section__my-recent-projects__block">
-					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__2.jpg" alt="">
-					<div class="section__my-recent-projects__block__text">
-						<span>Mobile Apps</span>
-						<h4>Branding & Digital Video Campaign
-							For George’s Cafe</h4>
-						<article>Lorem Ipsum Is Simply Dummy Text Of The
-							Printing And Typesetting Industry.</article>
-						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
-					</div>
-				</div>
-				<div class="section__my-recent-projects__block">
-					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__3.jpg" alt="">
-					<div class="section__my-recent-projects__block__text">
-						<span>Web Development</span>
-						<h4>Branding & Digital Video Campaign
-							For George’s Cafe</h4>
-						<article>Lorem Ipsum Is Simply Dummy Text Of The
-							Printing And Typesetting Industry.</article>
-						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
-					</div>
-				</div>
-				<div class="section__my-recent-projects__block">
-					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__1.jpg" alt="">
-					<div class="section__my-recent-projects__block__text">
-						<span>Analytics, UI-Ux</span>
-						<h4>Branding & Digital Video Campaign
-							For George’s Cafe</h4>
-						<article>Lorem Ipsum Is Simply Dummy Text Of The
-							Printing And Typesetting Industry.</article>
-						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
-					</div>
-				</div>
-				<div class="section__my-recent-projects__block">
-					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__2.jpg" alt="">
-					<div class="section__my-recent-projects__block__text">
-						<span>Mobile Apps</span>
-						<h4>Branding & Digital Video Campaign
-							For George’s Cafe</h4>
-						<article>Lorem Ipsum Is Simply Dummy Text Of The
-							Printing And Typesetting Industry.</article>
-						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
-					</div>
-				</div>
-				<div class="section__my-recent-projects__block">
-					<img class="section__my-recent-projects__block_img" src="./assets/images/section__my-recent-projects/your__images_here__3.jpg" alt="">
-					<div class="section__my-recent-projects__block__text">
-						<span>Web Development</span>
-						<h4>Branding & Digital Video Campaign
-							For George’s Cafe</h4>
-						<article>Lorem Ipsum Is Simply Dummy Text Of The
-							Printing And Typesetting Industry.</article>
-						<a class="section__my-recent-projects__block__view-more-link" href="#">View Case Studies <img src="./assets/images/icons/arrow-right-red.jpg" alt=""></a>
-					</div>
-				</div>
-			</div>
-			<div class="section__my-recent-projects__explore-more-btn-wrapper">
-				<a class="section__my-recent-projects__explore-more-btn" href="#">Explore More</a>
 			</div>			
 		</section>
-		<section class="section__my-work-example">
-			<div class="section__my-work-example__wrapper">
-				<div class="section__my-work-example__cross-img">
-					<img src="./assets/images/header/cross.png" alt="">
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-date">Sept 2023 – June 2025</div>
+                    <h3>MSc in Internet of Things & Wireless Technologies</h3>
+                    <h4>Skolkovo Institute of Science & Technology, Moscow, Russia</h4>
+                    <p class="grade">Final Grade: A</p>
+                    <div class="coursework">
+                        <h5>Key Coursework:</h5>
+                        <ul>
+                            <li>Deep Learning</li>
+                            <li>Machine Learning</li>
+                            <li>Computer Vision</li>
+                            <li>Data Science</li>
+                            <li>Internet of Things</li>
+                        </ul>
 				</div>
-				<div class="arrow-component center">
-					<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
-					<span class="arrow-component-text-1">My</span>
-					<span class="arrow-component-text-2">Portfolio</span>
+                    <p class="thesis"><strong>Thesis:</strong> Data Generation And Data Analysis of Parkinson's Disease Freezing of Gait Using Machine Learning</p>
 				</div>
-				<h2>My Work Example</h2>
-				<nav class="section__my-work-example__nav">
-					<ul>
-						<li><a class="active-mini-nav" href="">All</a></li>
-						<li><a href="#">Branding</a></li>
-						<li><a href="#">Photography</a></li>
-						<li><a href="#">Fashion</a></li>
-						<li><a href="#">Product</a></li>
+
+                <div class="education-card">
+                    <div class="education-date">Nov 2016 – Jan 2021</div>
+                    <h3>BE in Mechatronics Engineering</h3>
+                    <h4>Mehran University of Engineering & Technology, Jamshoro, Pakistan</h4>
+                    <p class="grade">GPA: 3.94/4.0</p>
+                    <div class="coursework">
+                        <h5>Key Coursework:</h5>
+                        <ul>
+                            <li>Machine Intelligence</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Data Structures</li>
+                            <li>Robotics</li>
+                            <li>Industrial Automation</li>
 					</ul>
-				</nav>
-				<div class="section__my-work-example__grid">
-					<div class="section__my-work-example__box">
-						<h5>Motion Graphics</h5>
-						<span>Android App</span>
-						<img src="./assets/images/section__my-work-example/your__images_here__1.jpg" alt="">
 					</div>
-					<div class="section__my-work-example__box">
-						<h5>E-Learning App</h5>
-						<span>IOS App</span>
-						<img src="./assets/images/section__my-work-example/your__images_here__2.jpg" alt="">
-					</div>
-					<div class="section__my-work-example__box">
-						<h5>Visual Design</h5>
-						<span>Android App</span>
-						<img src="./assets/images/section__my-work-example/your__images_here__3.jpg" alt="">
-					</div>
-					<div class="section__my-work-example__box">
-						<h5>Business Card</h5>
-						<span>Desktop</span>
-						<img src="./assets/images/section__my-work-example/your__images_here__4.jpg" alt="">
-					</div>
-					<div class="section__my-work-example__box">
-						<h5>Mockup</h5>
-						<span>Website</span>
-						<img src="./assets/images/section__my-work-example/your__images_here__5.jpg" alt="">
-					</div>
-					<div class="section__my-work-example__box">
-						<h5>Web Application</h5>
-						<span>Desktop</span>
-						<img src="./assets/images/section__my-work-example/your__images_here__6.jpg" alt="">
+                    <p class="thesis"><strong>Thesis:</strong> Development of Smart Wristband for Health Monitoring of Elderly People using IoT</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section__feedback">
-			<img class="section__feedback__bg-img" src="./assets/images/section__feedback/bg.jpg" alt="">
-			<div class="section__feedback__wrapper">
-				<img src="./assets/images/section__feedback/bxs_quote-left.png" alt="" class="section__feedback__left-quote">
-				<img src="./assets/images/section__feedback/bxs_quote-right.png" alt="" class="section__feedback__right-quote">
-				<div class="section__feedback__header-text">
-					<div class="arrow-component center">
-						<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
-						<span class="arrow-component-text-1">Client</span>
-						<span class="arrow-component-text-2">Testimonial</span>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just say hello.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>loharmurtaza788@gmail.com</span>
 					</div>
-					<h2>Feedback From Client</h2>
-				</div>
-				<div class="section__feedback__grid">
-					<div class="section__feedback__grid__block">
-						<div class="section__feedback__grid__block__article-wrapper">
-							<article class="section__feedback__grid__block__article">
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
-								typesetting industry.
-							</article>
-							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
-						</div>
-						<div class="section__feedback__grid__block__client-profile">
-							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar.png" alt="">
-							<div class="section__feedback__grid__block__client-profile__name">
-								<h5>Michale Doie</h5>
-								<span>Product Designer</span>
-								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Karachi, Pakistan</span>
 							</div>
 						</div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/murtaza788" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/loharmurtaza" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Ghulam-Murtaza-119" class="social-link" target="_blank">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                        <a href="https://orcid.org/0009-0008-8753-2179" class="social-link" target="_blank">
+                            <i class="fab fa-orcid"></i>
+                        </a>
+							</div>
+						</div>
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
 					</div>
-					<div class="section__feedback__grid__block">
-						<div class="section__feedback__grid__block__article-wrapper">
-							<article class="section__feedback__grid__block__article">
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
-								typesetting industry.
-							</article>
-							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
 						</div>
-						<div class="section__feedback__grid__block__client-profile">
-							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar__1.png" alt="">
-							<div class="section__feedback__grid__block__client-profile__name">
-								<h5>Adam Smith</h5>
-								<span>Designer</span>
-								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
 							</div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
 						</div>
-					</div>
-					<div class="section__feedback__grid__block">
-						<div class="section__feedback__grid__block__article-wrapper">
-							<article class="section__feedback__grid__block__article">
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
-								typesetting industry.
-							</article>
-							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
-						</div>
-						<div class="section__feedback__grid__block__client-profile">
-							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar.png" alt="">
-							<div class="section__feedback__grid__block__client-profile__name">
-								<h5>Michale Doie</h5>
-								<span>Product Designer</span>
-								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="section__feedback__grid__block">
-						<div class="section__feedback__grid__block__article-wrapper">
-							<article class="section__feedback__grid__block__article">
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
-								typesetting industry.
-							</article>
-							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
-						</div>
-						<div class="section__feedback__grid__block__client-profile">
-							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar__1.png" alt="">
-							<div class="section__feedback__grid__block__client-profile__name">
-								<h5>Adam Smith</h5>
-								<span>Designer</span>
-								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="section__feedback__grid__block">
-						<div class="section__feedback__grid__block__article-wrapper">
-							<article class="section__feedback__grid__block__article">
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
-								typesetting industry.
-							</article>
-							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
-						</div>
-						<div class="section__feedback__grid__block__client-profile">
-							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar.png" alt="">
-							<div class="section__feedback__grid__block__client-profile__name">
-								<h5>Michale Doie</h5>
-								<span>Product Designer</span>
-								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="section__feedback__grid__block">
-						<div class="section__feedback__grid__block__article-wrapper">
-							<article class="section__feedback__grid__block__article">
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
-								typesetting industry.
-							</article>
-							<img class="section__feedback__grid__block__article_msg-img" src="./assets/images/section__feedback/Vector_1.png" alt="">
-						</div>
-						<div class="section__feedback__grid__block__client-profile">
-							<img class="section__feedback__grid__block__client-profile__img-main" src="./assets/images/section__feedback/Avatar__1.png" alt="">
-							<div class="section__feedback__grid__block__client-profile__name">
-								<h5>Adam Smith</h5>
-								<span>Designer</span>
-								<img class="section__feedback__grid__block__client-profile__rates" src="./assets/images/section__feedback/Star.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section__contact">
-			<div class="section__contact__grid">
-				<div class="section__contact__grid__block">
-					<img class="section__contact__grid__block__img" src="./assets/images/section__contact/your__images__here.jpg" alt="">
-				</div>
-				<div class="section__contact__grid__block">
-					<div class="arrow-component">
-						<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
-						<span class="arrow-component-text-1">Get In</span>
-						<span class="arrow-component-text-2">Touch</span>
-					</div>
-					<h2>Feel Free to Contact</h2>
-					<form action="" class="section__contact__grid__block__form">
-						<div class="section__contact__grid__block__form__wrapper">
-							<div class="section__contact__grid__block__form__block__input-name__wrapper">
-								<input class="section__contact__grid__block__form__block__input-name" type="text" placeholder="Enter Name">
-							</div>
-							<div class="section__contact__grid__block__form__block__input-email__wrapper">
-								<input class="section__contact__grid__block__form__block__input-email" type="text" placeholder="Enter Email">
-							</div>
-							<div class="section__contact__grid__block__form__block__input-phone__wrapper">
-								<input class="section__contact__grid__block__form__block__input-phone" type="text" placeholder="Enter Phone">
-							</div>
-							<div class="section__contact__grid__block__form__block__input-subject__wrapper">
-								<input class="section__contact__grid__block__form__block__input-subject" type="text" placeholder="Enter Subject">
-							</div>
-						</div>
-						<div class="section__contact__grid__block__form__block__input-message__wrapper">
-							<textarea class="section__contact__grid__block__form__block__input-message" placeholder="Enter Message" name="" id="" cols="30" rows="1"></textarea>
-						</div>
-						<div class="section__contact__grid__block__form__submit-btn-wrapper">
-							<button type="submit">Contact Us <img src="./assets/images/icons/arrow-right.svg" alt=""></button>
-						</div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
 					</form>
 				</div>
 			</div>
 		</section>
-		<section class="section__blog">
-			<div class="arrow-component center">
-				<img class="arrow-component-img" src="./assets/images/icons/arrow.svg" alt="arrow">
-				<span class="arrow-component-text-1">Letest</span>
-				<span class="arrow-component-text-2">Blogs</span>
-			</div>
-			<h2>Blog & Articles</h2>
-			<div class="section__blog__grid">
-				<div class="section__blog__grid__block">
-					<img src="./assets/images/section__blog/your__image__here.jpg" alt="">
-					<div class="section__blog__grid__block__text">
-						<div class="section__blog__grid__block__text__author-date">
-							<span class="section__blog__grid__block__text__author">By David William</span>
-							<span class="section__blog__grid__block__text__date">Mar 8, 2022</span>
-						</div>
-						<h3 class="section__blog__grid__block__text__header">Quis autem vea eum
-							iure reprehenderit</h3>
-						<article class="section__blog__grid__block__text__article">Dolor repellendus temporibus autem
-							quibusdam officiis debitis rerum nece
-							aibus minima veniam.</article>
-						<a class="section__blog__grid__block__text__link" href="">Read More</a>
-					</div>
-				</div>
-				<div class="section__blog__grid__block">
-					<img src="./assets/images/section__blog/your__image__here__1.jpg" alt="">
-					<div class="section__blog__grid__block__text">
-						<div class="section__blog__grid__block__text__author-date">
-							<span class="section__blog__grid__block__text__author">By Will Doie</span>
-							<span class="section__blog__grid__block__text__date">Mar 8, 2022</span>
-						</div>
-						<h3 class="section__blog__grid__block__text__header">Quis autem vea eum
-							iure reprehenderit</h3>
-						<article class="section__blog__grid__block__text__article">Dolor repellendus temporibus autem
-							quibusdam officiis debitis rerum nece
-							aibus minima veniam.</article>
-						<a class="section__blog__grid__block__text__link" href="">Read More</a>
-					</div>
-				</div>
-				<div class="section__blog__grid__block">
-					<img src="./assets/images/section__blog/your__image__here__2.jpg" alt="">
-					<div class="section__blog__grid__block__text">
-						<div class="section__blog__grid__block__text__author-date">
-							<span class="section__blog__grid__block__text__author">By Adam Smith</span>
-							<span class="section__blog__grid__block__text__date">Mar 8, 2022</span>
-						</div>
-						<h3 class="section__blog__grid__block__text__header">Quis autem vea eum
-							iure reprehenderit</h3>
-						<article class="section__blog__grid__block__text__article">Dolor repellendus temporibus autem
-							quibusdam officiis debitis rerum nece
-							aibus minima veniam.</article>
-						<a class="section__blog__grid__block__text__link" href="">Read More</a>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
+
+    <!-- Footer -->
 	<footer class="footer">
-		<div class="footer__container">
-			<div class="footer__container__footer-logo">
-					<p class="footer__logo-first">Port</p>
-					<p class="footer__logo-second">folio.</p>
-			</div>
-			<nav class="footer__container__footer-nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contract</a></li>
-				</ul>
-			</nav>
-			<div class="footer__container__footer-socials">
-				<a href="#"><img src="./assets/images/footer/socials__icon__1.svg" alt=""></a>
-				<a href="#"><img src="./assets/images/footer/socials__icon__2.svg" alt=""></a>
-				<a href="#"><img src="./assets/images/footer/socials__icon__3.svg" alt=""></a>
-			</div>
+        <div class="container">
+            <p>&copy; 2024 Ghulam Murtaza. All rights reserved.</p>
 		</div>
 	</footer>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

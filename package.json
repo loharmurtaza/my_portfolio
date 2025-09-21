@@ -1,0 +1,32 @@
+{
+  "name": "ghulam-murtaza-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website for Ghulam Murtaza - Python Developer & Researcher",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html --host=localhost",
+    "start": "live-server --port=3000 --open=/index.html --host=localhost",
+    "build": "echo 'Static site - no build process needed'",
+    "serve": "live-server --port=8080 --open=/index.html"
+  },
+  "keywords": [
+    "portfolio",
+    "python",
+    "developer",
+    "researcher",
+    "ai",
+    "ml",
+    "responsive",
+    "website"
+  ],
+  "author": "Ghulam Murtaza",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loharmurtaza/portfolio"
+  },
+  "homepage": "https://github.com/loharmurtaza/portfolio#readme"
+}
