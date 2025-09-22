@@ -1,17 +1,45 @@
-// Mobile Navigation Toggle
+// Enhanced Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        if (navMenu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
 
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-}));
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    }));
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Close mobile menu on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -235,6 +263,83 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         document.body.style.opacity = '1';
     }, 100);
+});
+
+// Mobile-specific optimizations
+function isMobile() {
+    return window.innerWidth <= 768 && ('ontouchstart' in window || navigator.maxTouchPoints > 0);
+}
+
+// Disable hover effects on touch devices
+if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    document.body.classList.add('touch-device');
+}
+
+// Optimize animations for mobile
+if (isMobile()) {
+    // Reduce animation complexity on mobile
+    const style = document.createElement('style');
+    style.textContent = `
+        .hero-image::before,
+        .hero-image::after,
+        .hero-image .ai-element-1,
+        .hero-image .ai-element-2,
+        .hero-image .ai-element-3,
+        .hero-image .neural-line-1,
+        .hero-image .neural-line-2,
+        .hero-image .neural-line-3 {
+            animation-duration: 0.1s !important;
+            animation-iteration-count: 1 !important;
+        }
+        
+        .project-card:hover,
+        .experience-card:hover,
+        .publication-card:hover,
+        .education-card:hover {
+            transform: none !important;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+// Touch-friendly interactions
+document.addEventListener('DOMContentLoaded', () => {
+    // Add touch feedback to buttons and interactive elements
+    const interactiveElements = document.querySelectorAll('.btn, .skill-item, .project-card, .experience-card, .publication-card, .education-card, .social-link');
+    
+    interactiveElements.forEach(element => {
+        element.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.98)';
+        });
+        
+        element.addEventListener('touchend', function() {
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+        });
+    });
+});
+
+// Handle orientation change
+window.addEventListener('orientationchange', () => {
+    setTimeout(() => {
+        // Recalculate layout after orientation change
+        window.dispatchEvent(new Event('resize'));
+    }, 100);
+});
+
+// Optimize scroll performance on mobile
+let ticking = false;
+function updateOnScroll() {
+    // Your scroll-based updates here
+    ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        requestAnimationFrame(updateOnScroll);
+        ticking = true;
+    }
 });
 
 // Parallax effect for hero section

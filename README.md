@@ -66,9 +66,9 @@ portfolio/
    npm install
    ```
 3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 4. The portfolio will automatically open in your browser at `http://localhost:3000`
 
 ### Option 2: Direct Browser Access
