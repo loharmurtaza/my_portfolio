@@ -147,13 +147,13 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
-    color: #e5e7eb;
+    color: white;
 }
 
 .hero-description {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #d1d5db;
+    color: white;
     line-height: 1.7;
 }
 
@@ -174,7 +174,7 @@ body {
 
 .btn-primary {
     background: #fbbf24;
-    color: #1f2937;
+    color: white;
 }
 
 .btn-primary:hover {
@@ -192,6 +192,25 @@ body {
     background: white;
     color: #1f2937;
     transform: translateY(-2px);
+}
+
+.btn-resume {
+    background: #10b981;
+    color: white;
+    border: 2px solid #10b981;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-resume:hover {
+    background: #059669;
+    border-color: #059669;
+    transform: translateY(-2px);
+}
+
+.btn-resume i {
+    font-size: 0.9em;
 }
 
 .hero-image {
@@ -452,11 +471,11 @@ section {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease !important;
 }
 
 .skill-category:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) !important;
 }
 
 .skill-category h3 {
@@ -507,11 +526,11 @@ section {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease !important;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) !important;
 }
 
 .project-image {
@@ -696,6 +715,13 @@ section {
     font-weight: 500;
     margin-bottom: 1rem;
     font-size: 0.9rem;
+}
+
+.journal .status {
+    color: #f59e0b;
+    font-weight: 600;
+    font-style: italic;
+    margin-left: 0.5rem;
 }
 
 .publication-link {
@@ -949,8 +975,57 @@ section {
     font-weight: 500;
 }
 
-/* Responsive Design */
+/* Enhanced Responsive Design */
+
+/* Tablet Styles (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero-container {
+        gap: 3rem;
+    }
+    
+    .profile-image {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .hero-image::before {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .hero-image::after {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .publications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Styles (768px and below) */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Navigation */
     .hamburger {
         display: flex;
     }
@@ -966,10 +1041,26 @@ section {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
+        z-index: 999;
     }
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-menu .nav-link {
+        padding: 1rem 0;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .nav-menu .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 60px;
     }
 
     .hero-container {
@@ -980,59 +1071,467 @@ section {
 
     .hero-title {
         font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
     }
 
     .hero-buttons {
         justify-content: center;
-    }
-
-    .about-stats {
-        grid-template-columns: 1fr;
+        flex-wrap: wrap;
         gap: 1rem;
     }
 
+    /* Profile Image Adjustments */
+    .profile-image {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    /* AI Background Elements - Hide on mobile for performance */
+    .hero-image::before,
+    .hero-image::after,
+    .hero-image .ai-element-1,
+    .hero-image .ai-element-2,
+    .hero-image .ai-element-3,
+    .hero-image .neural-line-1,
+    .hero-image .neural-line-2,
+    .hero-image .neural-line-3 {
+        display: none;
+    }
+
+    /* Section Titles */
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* About Section */
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .stat h3 {
+        font-size: 2rem;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-category {
+        padding: 1.5rem;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    /* Experience Section */
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
+    }
+
+    /* Publications Section */
+    .publications-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .publication-card {
+        padding: 1.5rem;
+    }
+
+    /* Education Section */
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    /* Contact Section */
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
+    .contact-form {
+        padding: 1.5rem;
     }
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .experience-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .publications-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .education-grid {
-        grid-template-columns: 1fr;
+    .social-links {
+        justify-content: center;
     }
 }
 
+/* Small Mobile Styles (480px and below) */
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: 1.8rem;
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding-top: 90px;
+        padding-bottom: 50px;
     }
 
-    .section-title {
-        font-size: 2rem;
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 0.8rem;
     }
 
     .btn {
-        width: 200px;
+        width: 100%;
+        max-width: 250px;
         text-align: center;
+        padding: 14px 24px;
+    }
+
+    /* Profile Image */
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Section Titles */
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* About Section */
+    .about-stats {
+        gap: 1rem;
+    }
+
+    .stat h3 {
+        font-size: 1.8rem;
+    }
+
+    .stat p {
+        font-size: 0.9rem;
+    }
+
+    /* Skills Section */
+    .skill-category {
+        padding: 1.2rem;
+    }
+
+    .skill-category h3 {
+        font-size: 1.3rem;
+    }
+
+    .skill-item {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Project Cards */
+    .project-content {
+        padding: 1.2rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-tech span {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    /* Experience Cards */
+    .experience-card {
+        padding: 1.2rem;
+    }
+
+    .experience-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .experience-card h4 {
+        font-size: 1rem;
+    }
+
+    /* Publication Cards */
+    .publication-card {
+        padding: 1.2rem;
+    }
+
+    .publication-card h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Education Cards */
+    .education-card {
+        padding: 1.2rem;
+    }
+
+    .education-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .education-card h4 {
+        font-size: 1rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 1.2rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Social Links */
+    .social-link {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Extra Small Mobile (360px and below) */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mobile (height < 500px) */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 80px 0 40px;
+    }
+    
+    .hero-container {
+        gap: 1.5rem;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover,
+    .skill-item:hover,
+    .project-card:hover,
+    .experience-card:hover,
+    .publication-card:hover,
+    .education-card:hover,
+    .social-link:hover {
+        transform: none;
+    }
+    
+    .btn:active,
+    .skill-item:active,
+    .project-card:active,
+    .experience-card:active,
+    .publication-card:active,
+    .education-card:active,
+    .social-link:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Additional Mobile Enhancements */
+
+/* Prevent zoom on input focus (iOS Safari) */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select, textarea, input[type="text"], input[type="password"], 
+    input[type="datetime"], input[type="datetime-local"], 
+    input[type="date"], input[type="month"], input[type="time"], 
+    input[type="week"], input[type="number"], input[type="email"], 
+    input[type="url"], input[type="search"], input[type="tel"], 
+    input[type="color"] {
+        font-size: 16px;
+    }
+}
+
+/* Improve touch targets */
+@media (max-width: 768px) {
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .nav-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social-link {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .skill-item {
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Smooth scrolling for iOS */
+html {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fix iOS Safari viewport height issue */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        min-height: -webkit-fill-available;
+    }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .hero-image::before,
+    .hero-image::after,
+    .hero-image .ai-element-1,
+    .hero-image .ai-element-2,
+    .hero-image .ai-element-3,
+    .hero-image .neural-line-1,
+    .hero-image .neural-line-2,
+    .hero-image .neural-line-3 {
+        animation: none !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        background: #000;
+        color: #fff;
+        border: 2px solid #000;
+    }
+    
+    .btn-secondary {
+        background: #fff;
+        color: #000;
+        border: 2px solid #000;
+    }
+    
+    .btn-resume {
+        background: #10b981;
+        color: white;
+        border: 2px solid #10b981;
+    }
+    
+    .skill-item {
+        background: #000;
+        color: #fff;
+        border: 1px solid #000;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background: rgba(0, 0, 0, 0.95);
+        color: white;
+    }
+    
+    .nav-link {
+        color: white;
+    }
+    
+    .nav-menu {
+        background-color: #1f2937;
+    }
+    
+    .nav-menu .nav-link {
+        color: white;
+        border-bottom-color: #374151;
     }
 }
