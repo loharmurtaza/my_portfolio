@@ -174,6 +174,52 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
+// Continuous typing animation for name
+function continuousNameAnimation() {
+    const nameElement = document.getElementById('animated-name');
+    if (!nameElement) return;
+    
+    const names = [
+        'Ghulam Murtaza'
+    ];
+    
+    let currentIndex = 0;
+    let isDeleting = false;
+    let currentText = '';
+    
+    function animate() {
+        const fullText = names[currentIndex];
+        
+        if (isDeleting) {
+            currentText = fullText.substring(0, currentText.length - 1);
+        } else {
+            currentText = fullText.substring(0, currentText.length + 1);
+        }
+        
+        nameElement.textContent = currentText;
+        
+        let typeSpeed = isDeleting ? 50 : 100;
+        
+        if (!isDeleting && currentText === fullText) {
+            typeSpeed = 2000; // Pause at end
+            isDeleting = true;
+        } else if (isDeleting && currentText === '') {
+            isDeleting = false;
+            currentIndex = (currentIndex + 1) % names.length;
+            typeSpeed = 500; // Pause before next text
+        }
+        
+        setTimeout(animate, typeSpeed);
+    }
+    
+    animate();
+}
+
+// Initialize continuous name animation when page loads
+document.addEventListener('DOMContentLoaded', () => {
+    continuousNameAnimation();
+});
+
 // Initialize typing effect when page loads - DISABLED to preserve styling
 // document.addEventListener('DOMContentLoaded', () => {
 //     const heroTitle = document.querySelector('.hero-title');
@@ -228,7 +274,7 @@ function animateCounter(element, target, duration = 2000) {
             element.textContent = Math.floor(start) + '+';
             requestAnimationFrame(updateCounter);
         } else {
-            element.textContent = target + '+';
+            element.textContent = target;
         }
     }
     
