@@ -414,6 +414,56 @@ document.head.appendChild(style);
     emailjs.init("wCK-gKjDeQT4gefJR"); // Replace with your EmailJS public key
 })();
 
+// Google Analytics Event Tracking
+document.addEventListener('DOMContentLoaded', () => {
+    // Track button clicks
+    document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const buttonText = e.target.textContent.trim();
+            gtag('event', 'button_click', {
+                'button_text': buttonText,
+                'button_class': e.target.className
+            });
+        });
+    });
+
+    // Track project card interactions
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+            const projectTitle = card.querySelector('h3').textContent;
+            gtag('event', 'project_click', {
+                'project_title': projectTitle
+            });
+        });
+    });
+
+    // Track social link clicks
+    document.querySelectorAll('.social-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const platform = link.href.includes('linkedin') ? 'linkedin' :
+                            link.href.includes('github') ? 'github' :
+                            link.href.includes('researchgate') ? 'researchgate' : 'other';
+            gtag('event', 'social_click', {
+                'platform': platform
+            });
+        });
+    });
+
+    // Track section views
+    const sections = document.querySelectorAll('section[id]');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                gtag('event', 'section_view', {
+                    'section_id': entry.target.id
+                });
+            }
+        });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => observer.observe(section));
+});
+
 // Contact form submission
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
